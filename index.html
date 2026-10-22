@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ketua Pensi Simulator</title>
+    <!-- Menghubungkan file HTML ke file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <!-- Header / Judul Game -->
+        <header>
+            <h1>Ketua Pensi Simulator</h1>
+            <p id="day-counter">Hari ke-1 dari 10</p>
+        </header>
+
+        <!-- Indikator Status -->
+        <section class="status-container">
+            <div class="status-box">
+                <span>Anggaran:</span>
+                <span id="budget-value" class="status-number">Rp 5.000.000</span>
+            </div>
+            
+            <div class="status-box">
+                <span>Reputasi:</span>
+                <div class="progress-bar">
+                    <div id="reputation-bar" class="progress-fill" style="width: 50%;"></div>
+                </div>
+            </div>
+
+            <div class="status-box">
+                <span>Stres:</span>
+                <div class="progress-bar">
+                    <div id="stress-bar" class="progress-fill stress" style="width: 20%;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Area Cerita / Event -->
+        <main class="story-container">
+            <p id="story-text">Loading cerita...</p>
+        </main>
+
+        <!-- Pilihan Aksi -->
+        <footer class="action-container" id="action-buttons">
+            <button id="btn-option1" class="btn">Pilihan A</button>
+            <button id="btn-option2" class="btn">Pilihan B</button>
+        </footer>
+
+        <!-- Tombol Restart (Tersembunyi di awal) -->
+        <div id="restart-container" class="hidden">
+            <button id="btn-restart" class="btn btn-restart">Main Lagi</button>
+        </div>
+    </div>
+
+    <!-- Menghubungkan file HTML ke file JS -->
+    <script src="script.js"></script>
+</body>
+</html>
