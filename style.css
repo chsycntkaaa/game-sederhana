@@ -1,0 +1,145 @@
+/* Reset CSS dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 16px;
+}
+
+/* Container Game Utama */
+.game-container {
+    background-color: #1e293b;
+    width: 100%;
+    max-width: 480px;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #38bdf8;
+    margin-bottom: 4px;
+}
+
+#day-counter {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* Indikator Status */
+.status-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #0f172a;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.status-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.status-number {
+    font-weight: bold;
+    color: #4ade80;
+}
+
+.progress-bar {
+    width: 60%;
+    height: 12px;
+    background-color: #334155;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #38bdf8;
+    width: 50%;
+    transition: width 0.3s ease;
+}
+
+.progress-fill.stress {
+    background-color: #f43f5e;
+}
+
+/* Teks Cerita */
+.story-container {
+    background-color: #334155;
+    padding: 20px;
+    border-radius: 12px;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+#story-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #f1f5f9;
+}
+
+/* Tombol Aksi */
+.action-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    background-color: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 14px 18px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    text-align: left;
+}
+
+.btn:hover {
+    background-color: #7dd3fc;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-restart {
+    background-color: #4ade80;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-restart:hover {
+    background-color: #86efac;
+}
+
+/* Kelas utilitas untuk menyembunyikan elemen */
+.hidden {
+    display: none;
+}
